@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,
+    rgba(21, 20, 26, 0.8), rgba(12, 4, 58, 0.8)), url(./img/animal.jpg);
+    background-size: cover;
+
+}
+
+h1{
+    font-family: 'Henny Penny', cursive;
+    font-size: 50px;
+    color:  hsl(54, 100%, 50%);
+    padding: 20px;
+    margin: 3vh auto;
+    text-align: center;
+}
+
+.keys{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.key{
+    width: 90px;
+    height: 105px;
+    background: none;
+    border: 3px solid #000;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 10px;
+    align-items: center;
+}
+
+.key:hover{
+    size: 1.1rem;
+    border: 3px solid hsl(54, 100%, 50%);
+    box-shadow: 0 0 3px hsl(54, 100%, 50%);
+}
+
+.key:active{
+    animation: buttonClick 3s ease-in;
+    box-shadow: 5px 5px 10px hsl(40, 6%, 10%);
+}
+
+.pressed{
+    animation: buttonClick 3s ease-in;
+    border: 3px solid hsl(54, 100%, 50%);
+    box-shadow: 5px 5px 10px hsl(40, 6%, 10%);
+}
+
+kbd{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.sound{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color:hsl(54, 100%, 50%);
+    display: block;
+    text-align: center;
+}
+
+.volume__control{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 3vh auto;
+    color: #fff;
+}
+
+.fas{
+    margin:5px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#autoplay{
+    background: none;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid hsl(54, 100%, 50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: hsl(54, 100%, 50%);
+}
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color:hsl(240, 8%, 50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.muppet{
+    font-family: 'Henny Penny', cursive;
+    color: hsl(54, 100%, 50%);
+    font-size: 12px;
+}
+
+@keyframes buttonClick {
+    0%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>beat drums!</h1>
+    <div class="keys">
+        <button class="key a" id="a" onclick="makeSound('a')">
+            <kbd>A</kbd>
+            <span class="sound">rim</span>
+        </button>
+        <button class="key s" id="s" onclick="makeSound('s')">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+        </button>
+        <button class="key d" id="d" onclick="makeSound('d')">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+        </button>
+        <button class="key f" id="f" onclick="makeSound('f')">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+        </button>
+        <button class="key g" id="g" onclick="makeSound('g')">
+            <kbd>G</kbd>
+            <span class="sound">thin tom</span>
+        </button>
+        <button class="key h" id="h" onclick="makeSound('h')">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+        </button>
+        <button class="key j" id="j" onclick="makeSound('j')">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+        </button>
+        <button class="key k" id="k" onclick="makeSound('k')">
+            <kbd>K</kbd>
+            <span class="sound">low tom</span>
+        </button>
+        <button class="key l" id="l" onclick="makeSound('l')">
+            <kbd>L</kbd>
+            <span class="sound">crash</span>
+        </button>
+    </div>
+
+    <div class="volume__control">
+        <i class="fas fa-volume-up fa-2x"></i>
+        <input type="range" id="volume__slider" min="0" max="100">
+    </div>
+    <div class="button">
+        <button id="autoplay">
+            Let Animal play
+        </button>
+    </div>
+
+    <footer> Created by <a href="">Anna Kocot</a> in tribute to <span class="muppet">The Muppet Show</span></footer>
+    <script src="script.js"></script>
+</body>
+</html>
