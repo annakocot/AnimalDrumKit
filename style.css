@@ -18,6 +18,17 @@ h1{
     padding: 20px;
     margin: 3vh auto;
     text-align: center;
+    position: relative;
+}
+
+h1::before{
+    content: '';
+    background-image: url(./img/animalhead.png);
+    height: 100px;
+    width: auto;
+    position:absolute;
+    top: 0;
+    left: 0;
 }
 
 .keys{
@@ -102,6 +113,13 @@ kbd{
 }
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     color:hsl(240, 8%, 50%);
