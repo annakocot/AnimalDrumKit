@@ -1,90 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: linear-gradient(to right,
-    rgba(21, 20, 26, 0.8), rgba(12, 4, 58, 0.8)), url(./img/animal.jpg);
+            rgba(21, 20, 26, 0.8), rgba(12, 4, 58, 0.8)),
+            url(./img/animal.jpg);
     background-size: cover;
-
 }
 
-h1{
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    padding-bottom: 20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
     font-family: 'Henny Penny', cursive;
     font-size: 50px;
-    color:  hsl(54, 100%, 50%);
+    color: hsl(54, 100%, 50%);
     padding: 20px;
-    margin: 3vh auto;
-    text-align: center;
-    position: relative;
 }
 
-h1::before{
-    content: '';
-    background-image: url(./img/animalhead.png);
+.animal-head {
     height: 100px;
-    width: auto;
-    position:absolute;
-    top: 0;
-    left: 0;
+    width: 100px;
 }
 
-.keys{
+.keys {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
 }
 
-.key{
+.key {
     width: 90px;
     height: 105px;
-    background: none;
     border: 3px solid #000;
-    border-radius: 3px;
     margin: 5px;
     padding: 10px;
     align-items: center;
+    border-radius: 3px;
+    background: none;
+    outline: none;
 }
 
-.key:hover{
+.key:hover {
     size: 1.1rem;
     border: 3px solid hsl(54, 100%, 50%);
     box-shadow: 0 0 3px hsl(54, 100%, 50%);
 }
 
-.key:active{
-    animation: buttonClick 3s ease-in;
+.key:active {
     box-shadow: 5px 5px 10px hsl(40, 6%, 10%);
+    animation: buttonClick 3s ease-in;
 }
 
-.pressed{
-    animation: buttonClick 3s ease-in;
+.pressed {
     border: 3px solid hsl(54, 100%, 50%);
     box-shadow: 5px 5px 10px hsl(40, 6%, 10%);
+    animation: buttonClick 3s ease-in;
 }
 
-kbd{
+.kbd {
+    display: block;
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 45px;
     font-weight: 500;
     color: #fff;
-    display: block;
-    text-align: center;
 }
 
-.sound{
+.sound {
+    display: block;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-transform: uppercase;
-    color:hsl(54, 100%, 50%);
-    display: block;
-    text-align: center;
+    color: hsl(54, 100%, 50%);
 }
 
-.volume__control{
+.volume__control {
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -92,56 +99,58 @@ kbd{
     color: #fff;
 }
 
-.fas{
-    margin:5px;
+.fas {
+    margin: 5px;
 }
 
-.button{
-    display: flex;
-    justify-content: center;
-}
-
-#autoplay{
+#autoplay {
+    display: block;
+    margin: 0 auto;
     background: none;
     padding: 15px;
+    margin-bottom: 80px;
     border-radius: 30px;
     border: 2px solid hsl(54, 100%, 50%);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     color: hsl(54, 100%, 50%);
+    outline: none;
 }
 
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
+.footer {
     width: 100%;
-}
-
-.footer-text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    color:hsl(240, 8%, 50%);
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    right: 0;
+    left: 0;
 }
 
-.muppet{
+.footer-text {
+    padding: 30px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(240, 8%, 50%);
+}
+
+.link {
+    color: hsl(240, 7%, 71%);
+    text-decoration: none;
+}
+
+.muppet {
+    font-size: 12px;
     font-family: 'Henny Penny', cursive;
     color: hsl(54, 100%, 50%);
-    font-size: 12px;
 }
 
 @keyframes buttonClick {
-    0%{
+    0% {
         transform: scale(1.5);
     }
 
-    100%{
+    100% {
         transform: scale(1);
     }
 }
