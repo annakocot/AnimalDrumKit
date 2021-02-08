@@ -1,8 +1,8 @@
 ## Table of contents
-* [General info]
-* [Technologies]
-* [Satus]
-* [Setup]
+* General info
+* Technologies
+* Satus
+* Setup
 
 ## General info
 This project is simple drum kit simulator.
