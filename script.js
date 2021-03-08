@@ -49,15 +49,13 @@ autoPlayButton.addEventListener('click', () => {
         autoPlayOn = true;
         autoPlayButton.classList.add("autoPlayOn");
         autoPlayButton.innerText = "Stop That Noise";
-
     }
-    else {
 
+    else {
         clearInterval(autoPlayId);
         autoPlayOn = false;
         autoPlayButton.classList.remove("autoPlayOn");
         autoPlayButton.innerText = "Let Animal Play";
-
     }
 });
 
@@ -92,6 +90,5 @@ const makeSound = (key) => {
         case "l":
             playSound("./sounds/sound-9.wav");
             break;
-
     }
 }
